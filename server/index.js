@@ -7,11 +7,7 @@ const userRoutes = require("./routes/userRouter");
 const bookingRoutes = require("./routes/bookingRouter");
 app.use(express.json());
 
-app.use(
-  cors({
-    credentials: true,
-  })
-);
+app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 
 dotenv.config({ path: "./config.env" });
