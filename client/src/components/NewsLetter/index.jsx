@@ -14,9 +14,12 @@ const NewsletterSignup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("http://127.0.0.1:8000/register", {
-        email,
-      });
+      const { data } = await axios.post(
+        "https://edutech-pgdf.onrender.com/register",
+        {
+          email,
+        }
+      );
       if (data.error) {
         toast.error(data.error);
       } else {
