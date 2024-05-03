@@ -1,0 +1,63 @@
+.internship {
+  padding: 10%;
+  background-color: rgb(18, 16, 16);
+  font-family: "Questrial", sans-serif;
+  h1 {
+    padding: 20px;
+    font-size: 80px;
+  }
+
+  .internship--flex {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .column {
+    background-color: #000;
+    flex: 1 1 300px;
+    padding: 20px;
+    height: 520px;
+    box-sizing: border-box;
+    position: relative;
+
+    h2,
+    p {
+      padding: 15px;
+    }
+    .internship--button {
+      position: absolute;
+      bottom: 10px;
+      margin: auto;
+      button {
+        padding: 9px 12px;
+        background-color: transparent 4.1095890411%;
+        position: relative;
+        &:hover {
+          background-color: #bfb2b2;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .internship {
+    h1 {
+      text-align: center;
+      padding: 10px;
+      font-size: 35px;
+    }
+
+    .column {
+      height: 370px;
+      h2,
+      p {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+  }
+}

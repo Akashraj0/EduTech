@@ -1,0 +1,225 @@
+.intership--video--background {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+
+  .intership--video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: -1;
+  }
+
+  .intership--video--content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    font-family: "Questrial", sans-serif;
+    z-index: 1;
+
+    h1 {
+      padding: 20px;
+      font-size: 60px;
+    }
+
+    p {
+      padding: 10px;
+      margin-left: 10px;
+      margin-bottom: 30px;
+      font-size: 20px;
+    }
+
+    button {
+      padding: 20px;
+      width: 20%;
+      background-color: transparent;
+      color: #fff;
+      border: 2px solid #fff;
+      cursor: pointer !important;
+
+      &:hover {
+        background-color: #000000;
+      }
+    }
+  }
+}
+
+.internship--info {
+  background-color: rgb(18, 16, 16);
+  text-align: center;
+
+  h1 {
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 60px;
+  }
+
+  p {
+    padding: 91px;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 2;
+  }
+
+  .internship--info--grid {
+    width: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .column {
+    background-color: #000;
+    padding: 20px;
+    height: 450px;
+
+    h2 {
+      padding: 15px;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+    p {
+      padding: 15px;
+      margin-bottom: 10px;
+      text-align: left;
+      line-height: 2;
+    }
+
+    .column--list {
+      li {
+        text-decoration: none;
+        padding: 8px;
+        text-align: left;
+      }
+    }
+  }
+  .internship--fee {
+    p {
+      font-size: 20px;
+      text-align: center;
+      padding: 15px;
+      margin-top: 75px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .intership--video--background {
+    height: 52vh;
+    .intership--video--content {
+      width: 90%;
+      h1 {
+        padding: 10px;
+        font-size: 35px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      button {
+        font-size: 12px;
+        margin-top: -5px;
+        padding: 7px;
+        width: 25%;
+        cursor: pointer !important;
+      }
+    }
+  }
+
+  .internship--info {
+    h1 {
+      padding: 34px 10px;
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 14px;
+      padding: 55px;
+    }
+
+    .internship--info--grid {
+      width: 100%;
+      padding: 30px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .column {
+      background-color: #000;
+      padding: 20px;
+      height: 500px;
+
+      h2 {
+        padding: 15px;
+        margin-bottom: 10px;
+        text-align: left;
+      }
+
+      p {
+        padding: 15px;
+        margin-bottom: 10px;
+        text-align: left;
+        line-height: 2;
+      }
+
+      .column--list {
+        li {
+          font-size: 14px;
+          text-decoration: none;
+          padding: 8px;
+          text-align: left;
+        }
+      }
+    }
+    .internship--fee {
+      p {
+        font-size: 14px;
+        padding: 13px;
+        margin-top: 4px;
+        margin-bottom: 17px;
+      }
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  .intership--video--background {
+    .intership--video--content {
+      button {
+        width: 25%;
+      }
+    }
+  }
+  .internship--info {
+    .internship--info--grid {
+      width: 100%;
+      padding: 30px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .column {
+      background-color: #000;
+      padding: 20px;
+      height: 500px;
+    }
+  }
+}

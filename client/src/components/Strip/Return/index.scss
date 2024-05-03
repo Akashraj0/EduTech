@@ -1,0 +1,25 @@
+.success {
+  width: 70%;
+  height: 50vh;
+  margin: auto;
+  background-color: rgb(88, 188, 88);
+  p {
+    text-align: center;
+    padding: 35px;
+    // margin: 30px auto;
+    color: black;
+    font-size: 16px;
+  }
+}
+.failure {
+  width: 70%;
+  height: 50vh;
+  margin: auto;
+  background-color: rgb(211, 64, 64);
+  p {
+    text-align: center;
+    margin: auto;
+    color: black;
+    font-size: 16px;
+  }
+}

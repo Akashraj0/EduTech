@@ -1,0 +1,64 @@
+.apply {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 120px auto;
+  .paybox {
+    margin: auto;
+    text-align: center;
+
+    h1 {
+      padding: 20px;
+    }
+    .paybox-content {
+      font-size: 20px;
+      color: white;
+      margin: 20px auto;
+
+      h3 {
+        padding: 10px;
+      }
+
+      p {
+        padding: 10px;
+      }
+    }
+  }
+  .applyForm {
+    // position: absolute;
+    // top: 40%;
+    width: 100%;
+    // margin: auto;
+    display: flex;
+    flex-direction: column;
+    input {
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      color: white;
+      background-color: transparent;
+      width: 50%;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    .flat-button {
+      background-color: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+
+      &:hover {
+        background-color: #7d7676;
+      }
+    }
+  }
+}

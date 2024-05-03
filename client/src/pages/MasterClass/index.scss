@@ -1,0 +1,249 @@
+.masterclass {
+  img {
+    width: 90%;
+    margin: auto;
+    height: 100vh;
+    display: block;
+    z-index: -1;
+    overflow: visible;
+    filter: brightness(30%);
+  }
+
+  .masterclass-content {
+    // z-index: -1;
+    width: 60%;
+    top: 30%;
+    position: absolute;
+    margin-left: 90px;
+    color: #fff;
+    text-align: center;
+
+    h1 {
+      margin-left: 10px;
+      font-size: 60px;
+      text-align: left;
+    }
+
+    p {
+      padding: 40px;
+      margin-bottom: 15px;
+      font-size: 25px;
+      line-height: 1.2;
+      text-align: justify;
+    }
+
+    button {
+      padding: 20px;
+      width: 20%;
+      margin-left: 250px;
+      background-color: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+      cursor: pointer !important;
+
+      &:hover {
+        background-color: #000000;
+      }
+    }
+  }
+
+  .masterclass-info {
+    background-color: rgb(18, 16, 16);
+    min-height: fit-content;
+    padding-bottom: 10px;
+    h1 {
+      margin-top: 30px;
+      font-size: 60px;
+      text-align: center;
+      padding-top: 30px;
+    }
+
+    .masterclass-info-flex {
+      margin: 100px auto;
+      width: 80%;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 70px;
+
+      .masterclass-column {
+        border: 1px solid #000; /* Optional: Add border for visualization */
+        background-color: #000;
+        margin: auto;
+        width: 400px;
+        height: fit-content;
+
+        h4 {
+          font-size: 20px;
+          padding: 10px;
+          margin-bottom: 35px;
+        }
+
+        p {
+          margin: auto;
+          padding: 0;
+          width: 300px;
+          height: 300px;
+          // padding: 20px;
+          font-size: 18px;
+          text-align: justify;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+  .session {
+    background-color: rgb(18, 16, 16);
+    min-height: 60vh;
+    margin-top: 30px;
+
+    h1 {
+      text-align: center;
+      font-size: 35px;
+      padding: 20px;
+    }
+
+    .session-grid {
+      // width: 80%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      // margin: 50px auto;
+
+      .session-column1 {
+        text-align: center;
+        p {
+          font-size: 18px;
+          padding: 5px;
+        }
+
+        button {
+          padding: 20px;
+          font-size: 15px;
+          width: 20%;
+          background-color: transparent;
+          border: 2px solid white;
+          color: #fff;
+          cursor: pointer !important;
+        }
+      }
+
+      .session-colum2 {
+        margin-top: 30px;
+        line-height: 2;
+        li {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .masterclass {
+    img {
+      height: 75vh;
+    }
+    .masterclass-content {
+      width: 100%;
+      top: 10%;
+      position: absolute;
+      padding: 31px;
+      margin-left: 0px;
+      color: #fff;
+
+      h1 {
+        margin-left: 10px;
+        margin-bottom: 28px;
+        font-size: 35px;
+      }
+
+      p {
+        padding: 0p;
+        margin-bottom: 0px;
+        font-size: 14px;
+        text-align: justify;
+      }
+
+      button {
+        text-align: center;
+        width: 36%;
+        padding: 10px;
+        margin-left: 0;
+      }
+    }
+    .masterclass-info {
+      min-height: fit-content;
+      h1 {
+        margin-top: 70px;
+        font-size: 35px;
+        text-align: center;
+      }
+
+      .masterclass-info-flex {
+        margin: 80px auto;
+        width: 80%;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+
+        .masterclass-column {
+          width: 339px;
+          height: 250px;
+
+          h4 {
+            font-size: 20px;
+            padding: 10px;
+            margin-bottom: 35px;
+          }
+
+          p {
+            margin: 0;
+            padding: 9px;
+            font-size: 14px;
+            text-align: justify;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+    .session {
+      h1 {
+        text-align: center;
+        font-size: 35px;
+        padding: 20px;
+      }
+
+      .session-grid {
+        grid-template-columns: 1fr;
+
+        .session-column1 {
+          p {
+            font-size: 14px;
+          }
+
+          button {
+            padding: 10px;
+            font-size: 15px;
+            width: 45%;
+            background-color: transparent;
+            border: 2px solid white;
+            color: #fff;
+            text-align: center;
+            cursor: pointer !important;
+          }
+        }
+
+        .session-colum2 {
+          padding: 30px;
+          text-align: left;
+          margin-top: 40px;
+          line-height: 2.5;
+          li {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
