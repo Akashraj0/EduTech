@@ -1,4 +1,3 @@
-import axios from "axios";
 import { Routes, Route } from "react-router-dom";
 import Intership from "./pages/Internship";
 import Layout from "./Layout";
