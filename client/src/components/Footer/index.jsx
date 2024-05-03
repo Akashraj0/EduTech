@@ -22,12 +22,15 @@ const Footer = () => {
     console.log(data);
     const { name, email, subject, message } = data;
     try {
-      const { data } = await axios.post("/message", {
-        name,
-        email,
-        subject,
-        message,
-      });
+      const { data } = await axios.post(
+        "https://edutech-pgdf.onrender.com/message",
+        {
+          name,
+          email,
+          subject,
+          message,
+        }
+      );
       if (data.error) {
         toast.error(data.error);
       } else {

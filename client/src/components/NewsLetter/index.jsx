@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import { toast, Toaster } from "react-hot-toast";
 import "./index.scss";
 
 const NewsletterSignup = () => {
@@ -9,11 +11,22 @@ const NewsletterSignup = () => {
     setEmail(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission, e.g., send email to backend
-    console.log("Email submitted:", email);
-    setEmail("");
+    try {
+      const { data } = await axios.post("http://127.0.0.1:8000/register", {
+        email,
+      });
+      if (data.error) {
+        toast.error(data.error);
+      } else {
+        toast.success("email sent successful!");
+        setEmail("");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+    // Handle form submission, e.g., send email to backend https://edutech-pgdf.onrender.com/
   };
 
   return (
@@ -48,6 +61,7 @@ const NewsletterSignup = () => {
         </div>
       </div>
       <p className="copyright">©2021 by Aeroin SpaceTech || Aeroin Edutech</p>
+      <Toaster position="bottom-right" reverseOrder={false} />
     </>
   );
 };

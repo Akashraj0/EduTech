@@ -10,7 +10,6 @@ import Return from "./components/Strip/Return";
 import "./App.scss";
 import Apply from "./pages/Apply";
 
-axios.defaults.baseURL = "http://localhost:8000";
 axios.defaults.withCredentials = true;
 function App() {
   return (

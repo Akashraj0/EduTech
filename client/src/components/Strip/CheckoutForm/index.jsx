@@ -29,7 +29,7 @@ const CheckoutForm = () => {
       };
       try {
         const response = await fetch(
-          "http://127.0.0.1:8000/book/create-checkout-session/",
+          "https://edutech-pgdf.onrender.com/book/create-checkout-session/",
           {
             method: "POST",
             body: JSON.stringify(data),
